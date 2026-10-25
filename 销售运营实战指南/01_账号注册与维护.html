@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>01 账号注册与维护 · 跨境电商销售运营实战指南</title>
+<style>
+  :root{
+    --ink:#0f172a; --ink-2:#334155; --ink-3:#64748b; --line:#e2e8f0;
+    --bg:#f1f5f9; --card:#ffffff;
+    --teal:#0f766e; --teal-bg:#ccfbf1; --blue:#1e3a5f; --blue-bg:#dbeafe;
+    --orange:#ea580c; --orange-bg:#ffedd5; --red:#b91c1c; --red-bg:#fee2e2;
+    --amber:#b45309; --green:#15803d; --green-bg:#dcfce7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+  .wrap{max-width:1040px;margin:0 auto;padding:40px 24px 80px}
+  .breadcrumb{font-size:13px;color:var(--ink-3);margin-bottom:18px}
+  .breadcrumb a{color:var(--teal);text-decoration:none}
+  .modhead{background:linear-gradient(135deg,#0f766e,#1e3a5f);color:#fff;border-radius:16px;padding:28px 32px;margin-bottom:26px}
+  .modhead .pri{float:right;margin-top:4px}
+  .modhead .num{font-size:13px;letter-spacing:2px;opacity:.85}
+  .modhead h1{font-size:26px;margin:6px 0 8px}
+  .modhead .tag{font-size:14px;opacity:.92}
+  h2{font-size:21px;margin:38px 0 14px;color:var(--blue);border-left:5px solid var(--teal);padding-left:12px}
+  h3{font-size:17px;margin:22px 0 10px;color:var(--ink)}
+  p{color:var(--ink-2)}
+  .badge{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px}
+  .b-p0{background:var(--red-bg);color:var(--red)}
+  .b-p1{background:var(--orange-bg);color:var(--orange)}
+  .b-p2{background:var(--teal-bg);color:var(--teal)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px;box-shadow:0 1px 3px rgba(15,23,42,.04)}
+  .callout{border-left:4px solid var(--orange);background:var(--orange-bg);padding:13px 18px;border-radius:0 10px 10px 0;margin:16px 0;font-size:14.5px}
+  .callout.red{border-color:var(--red);background:var(--red-bg)}
+  .callout.teal{border-color:var(--teal);background:var(--teal-bg)}
+  ul,ol{color:var(--ink-2)}
+  li{margin-bottom:5px}
+  .goals{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .goal{background:var(--teal-bg);border-radius:10px;padding:14px 16px;font-size:14.5px}
+  .goal b{color:var(--teal)}
+  .concepts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .concept{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .concept .t{font-weight:600;color:var(--blue);font-size:15px;margin-bottom:4px}
+  .concept .d{font-size:13.5px;color:var(--ink-3);line-height:1.55}
+  .scene{border-left:3px solid var(--orange);padding:12px 16px;margin-bottom:10px;background:#fff;border-radius:0 8px 8px 0;border:1px solid var(--line);border-left:4px solid var(--orange)}
+  .scene .st{font-weight:600;color:var(--orange);font-size:14.5px;margin-bottom:3px}
+  .scene .sd{font-size:13.5px;color:var(--ink-2)}
+  .task{counter-reset:tn}
+  .task li{list-style:none;position:relative;padding-left:34px;margin-bottom:10px;font-size:14.5px}
+  .task li::before{counter-increment:tn;content:counter(tn);position:absolute;left:0;top:0;width:24px;height:24px;background:var(--teal);color:#fff;border-radius:50%;text-align:center;line-height:24px;font-size:13px;font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:12px 0;background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(15,23,42,.04)}
+  th,td{padding:10px 13px;text-align:left;font-size:13.5px;border-bottom:1px solid var(--line)}
+  th{background:#f8fafc;color:var(--blue);font-weight:600;font-size:13px}
+  tr:last-child td{border-bottom:none}
+  .src{font-size:13.5px}
+  .src li{margin-bottom:6px}
+  .src a{color:var(--teal);text-decoration:none;word-break:break-all}
+  .src a:hover{text-decoration:underline}
+  nav.pager{display:flex;justify-content:space-between;margin-top:40px;gap:12px}
+  nav.pager a{flex:1;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--ink);font-size:14px}
+  nav.pager a:hover{border-color:var(--teal)}
+  nav.pager .next{text-align:right;color:var(--teal);font-weight:600}
+  .foot{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-3)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="breadcrumb"><a href="README.md">索引</a> / <a href="00_导读与总览.html">总览</a> / <span>01 账号注册与维护</span></div>
+
+  <div class="modhead">
+    <span class="pri"><span class="badge" style="background:rgba(255,255,255,.22);color:#fff">P0 必学</span></span>
+    <div class="num">MODULE 01</div>
+    <h1>账号注册与维护</h1>
+    <div class="tag">一切运营的根基——账号没了，后面所有模块归零。</div>
+  </div>
+
+  <h2>学习目标</h2>
+  <div class="goals">
+    <div class="goal"><b>1.</b> 说清一个跨境店铺从注册到稳定运营所需的资质、流程与审核节点</div>
+    <div class="goal"><b>2.</b> 理解"账号关联"的成因与防关联的核心措施</div>
+    <div class="goal"><b>3.</b> 掌握账号健康度（绩效）指标体系，知道每项指标的红线与处理动作</div>
+    <div class="goal"><b>4.</b> 能描述二审/KYC、品牌备案、多账号矩阵管理的基本套路</div>
+  </div>
+
+  <h2>关键概念</h2>
+  <div class="concepts">
+    <div class="concept"><div class="t">账号类型</div><div class="d">个人卖家 / 专业卖家（Amazon）；本土店 / 跨境店（Shopee/TikTok）；全球开店 vs 自注册。类型决定费率、功能权限与流量倾斜。</div></div>
+    <div class="concept"><div class="t">防关联</div><div class="d">平台判定同一主体不能违规多开。核心是 IP、设备指纹、注册资料、收款账户、产品重复度"五隔离"。一旦判定关联，连带封店。</div></div>
+    <div class="concept"><div class="t">账号健康度 / 绩效</div><div class="d">平台对卖家表现的评分体系。Amazon 为 Account Health（ODR、迟发率、取消率、有效追踪率等），指数下滑直接限售或封号。</div></div>
+    <div class="review-removed" style="display:none"></div>
+    <div class="concept"><div class="t">二审 / KYC</div><div class="d">二次资料审核（账单、营业执照、法人证件）；KYC 是欧洲站资金合规审查。资料不齐或对不上是注册阶段最大杀手。</div></div>
+    <div class="concept"><div class="t">品牌备案</div><div class="d">Brand Registry。完成备案才能用 A+ 页面、品牌保护、跟卖投诉，是后续 Listing 优化和维权的前置条件。</div></div>
+  </div>
+
+  <div class="callout teal">
+    <strong>开发者视角提示：</strong>账号防关联、健康度监控、多店铺统一管理是 ERP/中台系统的高频需求。你做系统时，"多店铺隔离 + 权限 + 操作日志"几乎是标配，理解业务规则才能设计对。
+  </div>
+
+  <h2>业务流程图：账号全生命周期</h2>
+  <div class="card">
+    <svg viewBox="0 0 960 300" width="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs><marker id="a1" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#0f766e"/></marker></defs>
+      <g font-size="13" font-weight="600" text-anchor="middle">
+        <rect x="20" y="40" width="130" height="54" rx="10" fill="#ccfbf1" stroke="#0f766e"/><text x="85" y="72" fill="#0f4a44">筹备资质资料</text>
+        <rect x="180" y="40" width="130" height="54" rx="10" fill="#ccfbf1" stroke="#0f766e"/><text x="245" y="72" fill="#0f4a44">提交注册申请</text>
+        <rect x="340" y="40" width="130" height="54" rx="10" fill="#dbeafe" stroke="#1e3a5f"/><text x="405" y="72" fill="#172554">初审 / 触发二审</text>
+        <rect x="500" y="40" width="130" height="54" rx="10" fill="#dbeafe" stroke="#1e3a5f"/><text x="565" y="72" fill="#172554">审核通过 开店</text>
+        <rect x="660" y="40" width="130" height="54" rx="10" fill="#ffedd5" stroke="#ea580c"/><text x="725" y="72" fill="#7c2d12">日常运营维护</text>
+        <rect x="820" y="40" width="120" height="54" rx="10" fill="#dcfce7" stroke="#15803d"/><text x="880" y="72" fill="#14532d">健康度监控</text>
+      </g>
+      <g stroke="#0f766e" stroke-width="2" fill="none"><line x1="150" y1="67" x2="176" y2="67" marker-end="url(#a1)"/><line x1="310" y1="67" x2="336" y2="67" marker-end="url(#a1)"/></g>
+      <g stroke="#1e3a5f" stroke-width="2" fill="none"><line x1="470" y1="67" x2="496" y2="67" marker-end="url(#a1)"/><line x1="630" y1="67" x2="656" y2="67" marker-end="url(#a1)"/></g>
+      <g stroke="#ea580c" stroke-width="2" fill="none"><line x1="790" y1="67" x2="816" y2="67" marker-end="url(#a1)"/></g>
+      <!-- 健康度分支 -->
+      <path d="M880,94 L880,140" stroke="#15803d" stroke-width="2" fill="none" marker-end="url(#a1)"/>
+      <g font-size="12.5" font-weight="600" text-anchor="middle">
+        <rect x="700" y="145" width="150" height="50" rx="10" fill="#dcfce7" stroke="#15803d"/><text x="775" y="175" fill="#14532d">指标正常→继续运营</text>
+        <rect x="870" y="145" width="80" height="50" rx="10" fill="#fee2e2" stroke="#b91c1c"/><text x="910" y="175" fill="#7f1d1d">告警</text>
+      </g>
+      <line x1="870" y1="170" x2="824" y2="170" stroke="#15803d" stroke-width="2" marker-end="url(#a1)"/>
+      <!-- 告警处理 -->
+      <g font-size="12.5" font-weight="600" text-anchor="middle">
+        <rect x="820" y="220" width="130" height="48" rx="10" fill="#fee2e2" stroke="#b91c1c"/><text x="885" y="249" fill="#7f1d1d">申诉 / 整改 / 申诉</text>
+      </g>
+      <path d="M910,195 L910,217" stroke="#b91c1c" stroke-width="2" fill="none" marker-end="url(#a1)"/>
+      <text x="560" y="160" font-size="12" fill="#475569">→ 处理好回到日常运营；处理失败 = 封号冻结资金</text>
+    </svg>
+  </div>
+
+  <h2>常见业务场景</h2>
+  <div class="scene"><div class="st">注册被拒 / 触发二审</div><div class="sd">资料不齐、地址账单对不上、营业执照范围不符。运营动作：按要求补信用卡账单/公共事业账单（地址须与注册一致）、法人证件、营业执照，写申诉说明。这是新店第一道关。</div></div>
+  <div class="scene"><div class="st">账号关联封店</div><div class="sd">同一 IP/设备登录多店、收款账户重复、产品高度雷同被判定关联。一旦关联，主店也会被牵连。预防 &gt; 治疗，防关联要从注册第一天做起。</div></div>
+  <div class="scene"><div class="st">绩效指标告警（ODR 超标）</div><div class="sd">订单缺陷率（退货/差评/A-to-Z 索赔）超标触发黄色/红色警告。运营动作：定位是哪类缺陷飙升，抓品控、修 Listing 误导、改进物流时效，必要时下架问题 SKU。</div></div>
+  <div class="scene"><div class="st">KYC 审核（欧洲站）</div><div class="sd">平台要求提交企业受益人信息、地址证明、公司章程等做资金合规审查。资料务必真实且与注册一致，造假一旦查出永久封禁。</div></div>
+  <div class="scene"><div class="st">品牌备案与维权</div><div class="sd">拿到目标国商标后做 Brand Registry，开通 A+、品牌保护，遇到跟卖可投诉下架。没备案的 Listing 在 Amazon 几乎"裸奔"。</div></div>
+  <div class="scene"><div class="st">多账号矩阵管理</div><div class="sd">为分散风险或做不同品类，运营多店铺。核心是隔离 + 统一管理矛盾：既要防关联，又要高效操作。这是中台系统的典型场景。</div></div>
+
+  <h2>可落地的观察 / 练习任务</h2>
+  <ol class="task">
+    <li>打开 Amazon 全球开店官网，列出注册所需全部资料清单（营业执照、双币信用卡、收款账户、法人证件等），注明每项的用途与常见坑。</li>
+    <li>登录 Amazon Seller University，找到《Account Health》相关课程，记录 ODR、迟发率、取消率、有效追踪率四项的红线阈值（以官方课程标注为准）。</li>
+    <li>画一张"防关联五要素"对照表：IP / 设备 / 资料 / 收款 / 产品，每项写出隔离措施。能解释为什么用同一台电脑登录两个店会出事。</li>
+    <li>找一份真实的二审申诉模板（官方卖家论坛或卖家大学），理解其结构：说明情况 → 提供证据 → 承诺改进。不照抄，理解逻辑。</li>
+    <li>调研品牌备案流程：在目标国注册商标（如美国 USPTO）→ 提交 Brand Registry → 拿到之后能做什么。列成一个 5 步流程。</li>
+    <li>对比 Amazon、Shopee、TikTok Shop 三家的注册门槛与审核差异，填一张表（资质要求 / 审核时长 / 跨境 vs 本土）。</li>
+  </ol>
+
+  <h2>官方参考资料</h2>
+  <ul class="src">
+    <li>Amazon 卖家大学·注册与账号健康：<a href="https://sellercentral.amazon.com/learn" target="_blank">sellercentral.amazon.com/learn</a>（重点课程：Registering Your Account、Account Health Dashboard）</li>
+    <li>Amazon 卖家后台·政策中心：<a href="https://sellercentral.amazon.com/help" target="_blank">sellercentral.amazon.com/help</a> → 搜 "Account Health" "Suspended"</li>
+    <li>Amazon Brand Registry：<a href="https://brandregistry.amazon.com/" target="_blank">brandregistry.amazon.com</a></li>
+    <li>Shopee 卖家教育中心·入驻与规则：<a href="https://seller.shopee.cn/edu/" target="_blank">seller.shopee.cn/edu</a></li>
+    <li>TikTok Shop 卖家中心·入驻指引：<a href="https://seller.tiktokglobalshop.com/" target="_blank">seller.tiktokglobalshop.com</a> → Seller Academy</li>
+  </ul>
+
+  <nav class="pager">
+    <a class="prev" href="00_导读与总览.html">← 上一页：导读与总览</a>
+    <a class="next" href="02_平台规则与合规.html">下一页：模块 02 平台规则与合规 →</a>
+  </nav>
+
+  <div class="foot">模块 01 · 账号注册与维护 · 账号资质与费率以各平台官方公告为准</div>
+
+</div>
+</body>
+</html>

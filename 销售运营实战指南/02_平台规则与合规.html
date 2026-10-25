@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>02 平台规则与合规 · 跨境电商销售运营实战指南</title>
+<style>
+  :root{
+    --ink:#0f172a; --ink-2:#334155; --ink-3:#64748b; --line:#e2e8f0;
+    --bg:#f1f5f9; --card:#ffffff;
+    --teal:#0f766e; --teal-bg:#ccfbf1; --blue:#1e3a5f; --blue-bg:#dbeafe;
+    --orange:#ea580c; --orange-bg:#ffedd5; --red:#b91c1c; --red-bg:#fee2e2;
+    --amber:#b45309; --green:#15803d; --green-bg:#dcfce7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+  .wrap{max-width:1040px;margin:0 auto;padding:40px 24px 80px}
+  .breadcrumb{font-size:13px;color:var(--ink-3);margin-bottom:18px}
+  .breadcrumb a{color:var(--teal);text-decoration:none}
+  .modhead{background:linear-gradient(135deg,#0f766e,#1e3a5f);color:#fff;border-radius:16px;padding:28px 32px;margin-bottom:26px}
+  .modhead .pri{float:right;margin-top:4px}
+  .modhead .num{font-size:13px;letter-spacing:2px;opacity:.85}
+  .modhead h1{font-size:26px;margin:6px 0 8px}
+  .modhead .tag{font-size:14px;opacity:.92}
+  h2{font-size:21px;margin:38px 0 14px;color:var(--blue);border-left:5px solid var(--teal);padding-left:12px}
+  h3{font-size:17px;margin:22px 0 10px;color:var(--ink)}
+  p{color:var(--ink-2)}
+  .badge{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px;box-shadow:0 1px 3px rgba(15,23,42,.04)}
+  .callout{border-left:4px solid var(--orange);background:var(--orange-bg);padding:13px 18px;border-radius:0 10px 10px 0;margin:16px 0;font-size:14.5px}
+  .callout.red{border-color:var(--red);background:var(--red-bg)}
+  .callout.teal{border-color:var(--teal);background:var(--teal-bg)}
+  ul,ol{color:var(--ink-2)} li{margin-bottom:5px}
+  .goals{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .goal{background:var(--teal-bg);border-radius:10px;padding:14px 16px;font-size:14.5px}
+  .goal b{color:var(--teal)}
+  .concepts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .concept{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .concept .t{font-weight:600;color:var(--blue);font-size:15px;margin-bottom:4px}
+  .concept .d{font-size:13.5px;color:var(--ink-3);line-height:1.55}
+  .scene{border:1px solid var(--line);border-left:4px solid var(--orange);padding:12px 16px;margin-bottom:10px;background:#fff;border-radius:0 8px 8px 0}
+  .scene .st{font-weight:600;color:var(--orange);font-size:14.5px;margin-bottom:3px}
+  .scene .sd{font-size:13.5px;color:var(--ink-2)}
+  .task{counter-reset:tn;padding-left:0}
+  .task li{list-style:none;position:relative;padding-left:34px;margin-bottom:10px;font-size:14.5px}
+  .task li::before{counter-increment:tn;content:counter(tn);position:absolute;left:0;top:0;width:24px;height:24px;background:var(--teal);color:#fff;border-radius:50%;text-align:center;line-height:24px;font-size:13px;font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:12px 0;background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(15,23,42,.04)}
+  th,td{padding:10px 13px;text-align:left;font-size:13.5px;border-bottom:1px solid var(--line)}
+  th{background:#f8fafc;color:var(--blue);font-weight:600;font-size:13px}
+  tr:last-child td{border-bottom:none}
+  .src{font-size:13.5px} .src a{color:var(--teal);text-decoration:none;word-break:break-all} .src a:hover{text-decoration:underline}
+  nav.pager{display:flex;justify-content:space-between;margin-top:40px;gap:12px}
+  nav.pager a{flex:1;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--ink);font-size:14px}
+  nav.pager a:hover{border-color:var(--teal)}
+  nav.pager .next{text-align:right;color:var(--teal);font-weight:600}
+  .foot{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-3)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="breadcrumb"><a href="README.md">索引</a> / <a href="00_导读与总览.html">总览</a> / <span>02 平台规则与合规</span></div>
+
+  <div class="modhead">
+    <span class="pri"><span class="badge" style="background:rgba(255,255,255,.22);color:#fff">P0 必学</span></span>
+    <div class="num">MODULE 02</div>
+    <h1>平台规则与合规</h1>
+    <div class="tag">踩红线 = 封店 + 冻结资金 + 库存压垮。这是不可逾越的底线模块。</div>
+  </div>
+
+  <h2>学习目标</h2>
+  <div class="goals">
+    <div class="goal"><b>1.</b> 分清三大知识产权（商标/专利/版权）在跨境场景下的侵权判定</div>
+    <div class="goal"><b>2.</b> 说出主流目标市场的产品认证要求（CE/FCC/FCC 等）</div>
+    <div class="goal"><b>3.</b> 理解 VAT/GST/销售税的申报逻辑与不合规后果</div>
+    <div class="goal"><b>4.</b> 能列出上架前的合规自查清单，并描述侵权投诉的处理流程</div>
+  </div>
+
+  <h2>关键概念</h2>
+  <div class="concepts">
+    <div class="concept"><div class="t">知识产权三件套</div><div class="d">商标（牌子）、专利（外观/发明）、版权（图片/文案/视频）。跟卖带商标的、用别人专利结构、盗图都算侵权。选品第一关就查这个。</div></div>
+    <div class="concept"><div class="t">产品合规认证</div><div class="d">欧盟 CE、美国 FCC/FDA、日本 PSE 等。卖电子产品、母婴、食品接触类几乎必须有，无认证轻则下架，重则海关扣货。</div></div>
+    <div class="concept"><div class="t">税务合规</div><div class="d">欧盟/英国 VAT、澳洲 GST、美国各州销售税。达到阈值就要注册税号申报。平台代扣代缴（如欧盟 IOSS）只覆盖小额，大额仍需自报。</div></div>
+    <div class="concept"><div class="t">平台政策</div><div class="d">各平台有销售政策、 listing 政策、广告政策、防伪政策。违规会被记绩效分、限售、封号。政策更新频繁，必须持续盯公告。</div></div>
+    <div class="concept"><div class="t">数据合规</div><div class="d">欧盟 GDPR、个人信息出境。做客服、邮件营销涉及用户数据时尤其注意，乱发邮件可能违规并触发投诉。</div></div>
+    <div class="concept"><div class="t">违禁/限售品</div><div class="d">各平台禁售清单（危险品、侵权品、管制器具等）；电池/液体/磁铁类有物流特殊要求。选品时就排除。</div></div>
+  </div>
+
+  <div class="callout red">
+    <strong>合规红线提醒：</strong>本模块提到的税种、认证、政策均以当地官方机构与平台最新公告为准，跨境电商规变动频繁。涉及税务申报、知识产权诉讼等专业事项，务必咨询税务师、律师等专业机构，本指南仅作认知建立。
+  </div>
+
+  <h2>业务流程图：上架前合规自查 + 侵权投诉处理</h2>
+  <div class="card">
+    <svg viewBox="0 0 960 340" width="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs><marker id="b2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#0f766e"/></marker>
+      <marker id="b2r" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#b91c1c"/></marker></defs>
+      <text x="20" y="22" font-size="13" fill="#0f766e" font-weight="700">A. 上架前合规自查漏斗（每关不过则停下架）</text>
+      <g font-size="12.5" font-weight="600" text-anchor="middle">
+        <rect x="20" y="40" width="160" height="50" rx="8" fill="#ccfbf1" stroke="#0f766e"/><text x="100" y="70" fill="#0f4a44">查品牌/专利/版权</text>
+        <rect x="210" y="40" width="160" height="50" rx="8" fill="#ccfbf1" stroke="#0f766e"/><text x="290" y="70" fill="#0f4a44">查产品认证要求</text>
+        <rect x="400" y="40" width="160" height="50" rx="8" fill="#ccfbf1" stroke="#0f766e"/><text x="480" y="70" fill="#0f4a44">查平台禁售清单</text>
+        <rect x="590" y="40" width="160" height="50" rx="8" fill="#dbeafe" stroke="#1e3a5f"/><text x="670" y="70" fill="#172554">查税务注册阈值</text>
+        <rect x="780" y="40" width="160" height="50" rx="8" fill="#dcfce7" stroke="#15803d"/><text x="860" y="70" fill="#14532d">通过→可上架</text>
+      </g>
+      <g stroke="#0f766e" stroke-width="2" fill="none"><line x1="180" y1="65" x2="206" y2="65" marker-end="url(#b2)"/><line x1="370" y1="65" x2="396" y2="65" marker-end="url(#b2)"/><line x1="560" y1="65" x2="586" y2="65" marker-end="url(#b2)"/></g>
+      <g stroke="#1e3a5f" stroke-width="2" fill="none"><line x1="750" y1="65" x2="776" y2="65" marker-end="url(#b2)"/></g>
+
+      <text x="20" y="140" font-size="13" fill="#b91c1c" font-weight="700">B. 收到侵权投诉 / 违规通知的处理流程</text>
+      <g font-size="12.5" font-weight="600" text-anchor="middle">
+        <rect x="20" y="158" width="140" height="50" rx="8" fill="#fee2e2" stroke="#b91c1c"/><text x="90" y="188" fill="#7f1d1d">收到投诉/通知</text>
+        <rect x="190" y="158" width="140" height="50" rx="8" fill="#ffedd5" stroke="#ea580c"/><text x="260" y="188" fill="#7c2d12">定位侵权类型</text>
+        <rect x="360" y="158" width="140" height="50" rx="8" fill="#ffedd5" stroke="#ea580c"/><text x="430" y="182" fill="#7c2d12">评估是否真侵权</text>
+        <rect x="530" y="158" width="140" height="50" rx="8" fill="#dbeafe" stroke="#1e3a5f"/><text x="600" y="182" fill="#172554">真→下架整改</text>
+        <rect x="700" y="158" width="140" height="50" rx="8" fill="#dbeafe" stroke="#1e3a5f"/><text x="770" y="182" fill="#172554">误判→申诉举证</text>
+        <rect x="870" y="158" width="70" height="50" rx="8" fill="#dcfce7" stroke="#15803d"/><text x="905" y="188" fill="#14532d">恢复</text>
+      </g>
+      <g stroke="#b91c1c" stroke-width="2" fill="none"><line x1="160" y1="183" x2="186" y2="183" marker-end="url(#b2r)"/></g>
+      <g stroke="#ea580c" stroke-width="2" fill="none"><line x1="330" y1="183" x2="356" y2="183" marker-end="url(#b2)"/><line x1="500" y1="183" x2="526" y2="183" marker-end="url(#b2)"/></g>
+      <g stroke="#1e3a5f" stroke-width="2" fill="none"><line x1="670" y1="183" x2="696" y2="183" marker-end="url(#b2)"/><line x1="840" y1="183" x2="866" y2="183" marker-end="url(#b2)"/></g>
+      <text x="430" y="232" font-size="12" fill="#475569">→ 真侵权及时止损；误侵权靠证据申诉（授权书/在先使用证明/不侵权对比分析）</text>
+      <text x="20" y="262" font-size="12" fill="#475569" font-weight="600">关键：所有投诉/违规都会进账号绩效，累计触发封号。预防（上架前自查）永远比事后申诉成本低。</text>
+    </svg>
+  </div>
+
+  <h2>常见业务场景</h2>
+  <div class="scene"><div class="st">跟卖带商标产品被投诉</div><div class="sd">跟卖（在别人 Listing 下挂自己 SKU）省事但有商标风险。跟了已备案品牌，品牌方一投诉就下架甚至封号。原则：不跟未授权品牌，跟卖前查商标状态。</div></div>
+  <div class="scene"><div class="st">电子产品无 CE/FCC 被海关扣</div><div class="sd">货到目的国海关，发现无认证标志或证书，整批扣留销毁。运营动作：选品阶段就确认目标市场认证要求，找有资质供应商或送检。</div></div>
+  <div class="scene"><div class="st">VAT 未注册/未申报，资金被冻结</div><div class="sd">欧洲站销售额超阈值未注册 VAT 税号，平台有权冻结资金。运营动作：监控销售额接近阈值时提前注册，按时申报缴税。</div></div>
+  <div class="scene"><div class="st">Listing 虚假宣传违规</div><div class="sd">标题/详情页写"best""#1""治愈"等绝对化或医疗效果词，触发广告政策或消费者保护违规。运营动作：熟悉各平台禁用词清单，文案过合规审查。</div></div>
+  <div class="scene"><div class="st">盗图/盗文案被版权投诉</div><div class="sd">直接用别家图片或抄五点描述，被原图主用 DCMA/平台投诉下架。运营动作：图片自摄或买版权，文案原创。</div></div>
+  <div class="scene"><div class="st">平台政策突变更新</div><div class="sd">平台频发政策更新（如佣金调整、类目准入变化）。运营动作：订阅平台公告/卖家论坛，定期 review 影响范围。</div></div>
+
+  <h2>可落地的观察 / 练习任务</h2>
+  <ol class="task">
+    <li>用美国 USPTO（uspto.gov）或欧盟 EUIPO（euipo.europa.eu）查一个具体商标的注册状态，理解商标查询的流程与字段含义。</li>
+    <li>列一张表：你的目标品类在主流市场需要哪些认证（如 3C 电子→欧盟 CE、美国 FCC；母婴→CPSIA）。标注"无证后果"。</li>
+    <li>在 Amazon 卖家后台帮助中心搜"Intellectual Property Violations"，读懂侵权投诉的发起方与被投诉方的处理路径。</li>
+    <li>查欧盟 VAT 与 IOSS 的区别：什么情况平台代扣、什么情况卖家自报，画一张判断流程图。</li>
+    <li>整理一份"上架前合规自查 Checklist"（≥10 项），涵盖知识产权、认证、税务、违禁品、广告合规。</li>
+    <li>关注 Amazon Seller Forum 或目标平台卖家公告一周，记录至少 3 条政策/规则更新，分析对运营的影响。</li>
+  </ol>
+
+  <h2>官方参考资料</h2>
+  <ul class="src">
+    <li>Amazon·知识产权与防伪：<a href="https://sellercentral.amazon.com/help" target="_blank">sellercentral.amazon.com/help</a> → 搜 "Intellectual Property" "Anti-Counterfeiting"</li>
+    <li>Amazon·政策与合规中心：<a href="https://sellercentral.amazon.com/help" target="_blank">sellercentral.amazon.com/help</a> → Policy, Pricing, and Product Compliance</li>
+    <li>欧盟税务与海关总司（VAT/IOSS）：<a href="https://taxation-customs.ec.europa.eu/" target="_blank">taxation-customs.ec.europa.eu</a></li>
+    <li>美国专利商标局（商标查询）：<a href="https://www.uspto.gov/" target="_blank">uspto.gov</a> · 欧盟知识产权局：<a href="https://euipo.europa.eu/" target="_blank">euipo.europa.eu</a></li>
+    <li>世界海关组织 HS 编码查询：<a href="https://www.wcoomd.org/" target="_blank">wcoomd.org</a> · 中国海关：<a href="http://www.customs.gov.cn/" target="_blank">customs.gov.cn</a></li>
+    <li>各平台规则中心：Shopee <a href="https://seller.shopee.cn/edu/" target="_blank">卖家教育中心</a> · TikTok Shop <a href="https://seller.tiktokglobalshop.com/" target="_blank">Seller Academy</a></li>
+  </ul>
+
+  <nav class="pager">
+    <a class="prev" href="01_账号注册与维护.html">← 上一页：账号注册与维护</a>
+    <a class="next" href="03_选品与供应链.html">下一页：模块 03 选品与供应链 →</a>
+  </nav>
+
+  <div class="foot">模块 02 · 平台规则与合规 · 政策与税法以官方公告与当地法律为准</div>
+
+</div>
+</body>
+</html>

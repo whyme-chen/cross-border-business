@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>04 商品上架与内容优化 · 跨境电商销售运营实战指南</title>
+<style>
+  :root{--ink:#0f172a;--ink-2:#334155;--ink-3:#64748b;--line:#e2e8f0;--bg:#f1f5f9;--card:#fff;--teal:#0f766e;--teal-bg:#ccfbf1;--blue:#1e3a5f;--blue-bg:#dbeafe;--orange:#ea580c;--orange-bg:#ffedd5;--red:#b91c1c;--red-bg:#fee2e2;--green:#15803d;--green-bg:#dcfce7}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+  .wrap{max-width:1040px;margin:0 auto;padding:40px 24px 80px}
+  .breadcrumb{font-size:13px;color:var(--ink-3);margin-bottom:18px}.breadcrumb a{color:var(--teal);text-decoration:none}
+  .modhead{background:linear-gradient(135deg,#0f766e,#1e3a5f);color:#fff;border-radius:16px;padding:28px 32px;margin-bottom:26px}
+  .modhead .pri{float:right;margin-top:4px}.modhead .num{font-size:13px;letter-spacing:2px;opacity:.85}.modhead h1{font-size:26px;margin:6px 0 8px}.modhead .tag{font-size:14px;opacity:.92}
+  h2{font-size:21px;margin:38px 0 14px;color:var(--blue);border-left:5px solid var(--teal);padding-left:12px}
+  h3{font-size:17px;margin:22px 0 10px}p{color:var(--ink-2)}
+  .badge{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px;box-shadow:0 1px 3px rgba(15,23,42,.04)}
+  .callout{border-left:4px solid var(--orange);background:var(--orange-bg);padding:13px-note 18px;padding:13px 18px;border-radius:0 10px 10px 0;margin:16px 0;font-size:14.5px}
+  .callout.teal{border-color:var(--teal);background:var(--teal-bg)}
+  ul,ol{color:var(--ink-2)}li{margin-bottom:5px}
+  .goals{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.goal{background:var(--teal-bg);border-radius:10px;padding:14px 16px;font-size:14.5px}.goal b{color:var(--teal)}
+  .concepts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.concept{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}.concept .t{font-weight:600;color:var(--blue);font-size:15px;margin-bottom:4px}.concept .d{font-size:13.5px;color:var(--ink-3);line-height:1.55}
+  .scene{border:1px solid var(--line);border-left:4px solid var(--orange);padding:12px 16px;margin-bottom:10px;background:#fff;border-radius:0 8px 8px 0}.scene .st{font-weight:600;color:var(--orange);font-size:14.5px;margin-bottom:3px}.scene .sd{font-size:13.5px;color:var(--ink-2)}
+  .task{counter-reset:tn;padding-left:0}.task li{list-style:none;position:relative;padding-left:34px;margin-bottom:10px;font-size:14.5px}.task li::before{counter-increment:tn;content:counter(tn);position:absolute;left:0;top:0;width:24px;height:24px;background:var(--teal);color:#fff;border-radius:50%;text-align:center;line-height:24px;font-size:13px;font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:12px 0;background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(15,23,42,.04)}th,td{padding:10px 13px;text-align:left;font-size:13.5px;border-bottom:1px solid var(--line)}th{background:#f8fafc;color:var(--blue);font-weight:600;font-size:13px}tr:last-child td{border-bottom:none}
+  .src{font-size:13.5px}.src a{color:var(--teal);text-decoration:none;word-break:break-all}.src a:hover{text-decoration:underline}
+  nav.pager{display:flex;justify-content:space-between;margin-top:40px;gap:12px}nav.pager a{flex:1;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--ink);font-size:14px}nav.pager a:hover{border-color:var(--teal)}nav.pager .next{text-align:right;color:var(--teal);font-weight:600}
+  .foot{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-3)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="breadcrumb"><a href="README.md">索引</a> / <a href="00_导读与总览.html">总览</a> / <span>04 商品上架与内容优化</span></div>
+
+  <div class="modhead">
+    <span class="pri"><span class="badge" style="background:rgba(255,255,255,.22);color:#fff">P0 必学</span></span>
+    <div class="num">MODULE 04</div>
+    <h1>商品上架与内容优化</h1>
+    <div class="tag">Listing 是线上门面，决定"被搜到"和"被买下"两件事。</div>
+  </div>
+
+  <h2>学习目标</h2>
+  <div class="goals">
+    <div class="goal"><b>1.</b> 说清一条 Listing 的构成要素及各自作用（标题/五点/详情/A+/图/搜索词）</div>
+    <div class="goal"><b>2.</b> 掌握关键词体系：核心词、长尾词、埋词位置与密度逻辑</div>
+    <div class="goal"><b>3.</b> 理解 Listing 要素如何分别影响"流量"和"转化"</div>
+    <div class="goal"><b>4.</b> 能按"原文→问题→优化建议"的结构诊断一条真实 Listing</div>
+  </div>
+
+  <h2>关键概念</h2>
+  <div class="concepts">
+    <div class="concept"><div class="t">Listing 六要素</div><div class="d">标题（Title）、五点描述（Bullet Points）、产品描述/详情、A+页面（品牌备案后）、图片（主图+副图）、后台搜索词（Search Terms）。每项各有算法权重和用户作用。</div></div>
+    <div class="concept"><div class="t">关键词体系</div><div class="d">核心词（高搜索高竞争）、长尾词（精准低竞争）、属性词。前三个埋在标题，长尾埋五点/详情，后台搜索词补漏。埋词不是堆砌，要可读+相关。</div></div>
+    <div class="concept"><div class="t">变体（Variation）</div><div class="d">同一 SPU 下不同颜色/尺码/款式的子 SKU，挂在父 ASIN 下。变体管理影响共享评价、流量聚合、库存区分。乱建变体会被判违规。</div></div>
+    <div class="concept"><div class="t">类目与属性</div><div class="d">类目树决定露出口径；商品属性（材质/尺寸/适用场景）是筛选条件，填全填准才能进相关搜索结果和筛选器。</div></div>
+    <div class="concept"><div class="t">跟卖 vs 自建</div><div class="d">跟卖：在已有 Listing 下卖同款，省建页但无定价权、易被投诉；自建：独立 Listing，可控但要从零积累。品牌备案后可用独家销售防跟卖。</div></div>
+    <div class="concept"><div class="t">A+ / 图文优化</div><div class="d">A+（Enhanced Brand Content）用图文排版强化卖点，提升转化与停留时长。主图必须白底纯图，副图展示场景/尺寸/细节/对比。</div></div>
+  </div>
+
+  <div class="callout teal">
+    <strong>一句话记住：</strong>标题和搜索词管"流量"（能不能被搜到），主图、价格、评分、五点、A+ 管"转化"（搜到后点不点、买不买）。优化前先定位瓶颈在流量端还是转化端，别瞎改。
+  </div>
+
+  <h2>业务流程图：Listing 影响漏斗</h2>
+  <div class="card">
+    <svg viewBox="0 0 960 320" width="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs><marker id="d4" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#0f766e"/></marker></defs>
+      <!-- 漏斗层 -->
+      <g font-size="13" font-weight="600" text-anchor="middle">
+        <rect x="60" y="20" width="840" height="52" rx="10" fill="#ccfbf1" stroke="#0f766e"/>
+        <text x="480" y="51" fill="#0f4a44">① 曝光 Impressions　← 标题关键词 / 类目 / 搜索词 / 广告</text>
+        <rect x="120" y="86" width="720" height="52" rx="10" fill="#dbeafe" stroke="#1e3a5f"/>
+        <text x="480" y="117" fill="#172554">② 点击 Click　← 主图 / 标题可读性 / 价格 / 评分星数 / 标签</text>
+        <rect x="180" y="152" width="600" height="52" rx="10" fill="#ffedd5" stroke="#ea580c"/>
+        <text x="480" y="183" fill="#7c2d12">③ 转化 Conversion　← 五点卖点 / A+图文 / 详情 / Review / 物流时效</text>
+        <rect x="280" y="218" width="400" height="52" rx="10" fill="#dcfce7" stroke="#15803d"/>
+        <text x="480" y="249" fill="#14532d">④ 复购 & 口碑　← 品质 / 售后 / 包装 / 邮件关怀</text>
+      </g>
+      <line x1="480" y1="72" x2="480" y2="82" stroke="#0f766e" stroke-width="2" marker-end="url(#d4)"/>
+      <line x1="480" y1="138" x2="480" y2="148" stroke="#0f766e" stroke-width="2" marker-end="url(#d4)"/>
+      <line x1="480" y1="204" x2="480" y2="214" stroke="#0f766e" stroke-width="2" marker-end="url(#d4)"/>
+      <text x="480" y="298" font-size="12" fill="#475569" text-anchor="middle">优化循环：定位瓶颈在哪一层 → 改对应要素 → 看数据变化 → 迭代</text>
+    </svg>
+  </div>
+
+  <h3>Listing 优化对照示例（结构演示）</h3>
+  <table>
+    <tr><th>要素</th><th>原文（问题）</th><th>优化建议</th></tr>
+    <tr><td>标题</td><td>"Wireless Earbuds"（无关键词、无卖点、无属性）</td><td>核心词前置 + 品牌 + 核心卖点 + 关键属性，例"【品牌】蓝牙耳机 无线 降噪 长续航 IPX7 防水 适用于运动"。可读+埋词兼顾。</td></tr>
+    <tr><td>五点描述</td><td>笼统罗列功能，无场景痛点</td><td>每点=卖点+利益点+场景，前置关键词；分别覆盖音质/续航/防水/佩戴/兼容性。</td></tr>
+    <tr><td>主图</td><td>带背景、有文字、非纯产品</td><td>白底纯产品图 ≥85% 画面占比；副图补场景/尺寸/细节/对比。</td></tr>
+    <tr><td>搜索词</td><td>堆砌重复关键词</td><td>不与标题重复，补长尾词与同义词，去停用词，控制在字符上限内。</td></tr>
+  </table>
+
+  <h2>常见业务场景</h2>
+  <div class="scene"><div class="st">有流量没转化（点击率低）</div><div class="sd">曝光不少但点击差，问题多在主图/标题可读性/价格/评分。运营动作：优化主图（白底+卖点视觉化）、核对价格竞争力、攒好评。</div></div>
+  <div class="scene"><div class="st">有转化没流量（搜不到）</div><div class="sd">排名靠后、关键词没埋好。运营动作：用搜索词报告找高转化词补进标题/五点，配合广告打这些词提升自然排名。</div></div>
+  <div class="scene"><div class="st">变体管理混乱</div><div class="sd">该合并的没合并（评价分散）、不该合并的乱合并（被判变体违规）。运营动作：理解父子 ASIN 规则，按真实属性建变体。</div></div>
+  <div class="scene"><div class="st">埋词过度被降权</div><div class="sd">关键词堆砌、不可读、塞无关词，触发算法降权或人工下架。运营动作：标题保持可读，埋词自然，无关词别塞。</div></div>
+  <div class="scene"><div class="st">没做 A+ / 图文差</div><div class="sd">纯文字详情，转化弱于做了 A+ 的竞品。运营动作：品牌备案后做 A+，用对比图/场景图/卖点图标强化说服力。</div></div>
+  <div class="scene"><div class="st">类目/属性填错</div><div class="sd">进错类目或属性缺失，进不了筛选器，丢失精准流量。运营动作：选准类目，属性逐项填全。</div></div>
+
+  <h2>可落地的观察 / 练习任务</h2>
+  <ol class="task">
+    <li>挑一条 Amazon 上你品类里的 Bestseller Listing，拆解它的标题结构（核心词位置/品牌/卖点/属性），理解埋词逻辑。</li>
+    <li>用"原文→问题→优化建议"结构，诊断一条写得差的 Listing（标题、五点、主图各写一组），不少于 3 处问题。</li>
+    <li>在 Amazon Seller University 找《Listing Optimization》/《Create Listings》课程，记录标题字符上限、主图规范、搜索词限制（以课程标注为准）。</li>
+    <li>找一条多变体 Listing，画它的父子 ASIN 结构，分析变体如何共享评价与流量。</li>
+    <li>对比一条做了 A+ 和没做 A+ 的同类 Listing，从用户视角说出 A+ 提升转化的三个方面。</li>
+    <li>整理一份"上架前 Listing 自查清单"（标题/五点/图/属性/搜索词/合规各几项），对照执行。</li>
+  </ol>
+
+  <h2>官方参考资料</h2>
+  <ul class="src">
+    <li>Amazon 卖家大学·Listing 优化：<a href="https://sellercentral.amazon.com/learn" target="_blank">sellercentral.amazon.com/learn</a> → Listing & Catalog 课程组</li>
+    <li>Amazon·A+ 内容指南：<a href="https://sellercentral.amazon.com/help" target="_blank">sellercentral.amazon.com/help</a> → 搜 "A+ Content" "Enhanced Brand Content"</li>
+    <li>Amazon·Listing 政策与图片规范：<a href="https://sellercentral.amazon.com/help" target="_blank">sellercentral.amazon.com/help</a> → 搜 "Image Requirements" "Listing Style Guide"</li>
+    <li>Shopee·商品上架与优化：<a href="https://seller.shopee.cn/edu/" target="_blank">seller.shopee.cn/edu</a></li>
+    <li>TikTok Shop·商品管理：<a href="https://seller.tiktokglobalshop.com/" target="_blank">seller.tiktokglobalshop.com</a> → Seller Academy</li>
+  </ul>
+
+  <nav class="pager">
+    <a class="prev" href="03_选品与供应链.html">← 上一页：选品与供应链</a>
+    <a class="next" href="05_定价与促销.html">下一页：模块 05 定价与促销 →</a>
+  </nav>
+
+  <div class="foot">模块 04 · 商品上架与内容优化 · 各平台 Listing 规范以其后台最新指南为准</div>
+
+</div>
+</body>
+</html>

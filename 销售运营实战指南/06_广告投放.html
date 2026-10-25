@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>06 广告投放 · 跨境电商销售运营实战指南</title>
+<style>
+  :root{--ink:#0f172a;--ink-2:#334155;--ink-3:#64748b;--line:#e2e8f0;--bg:#f1f5f9;--card:#fff;--teal:#0f766e;--teal-bg:#ccfbf1;--blue:#1e3a5f;--blue-bg:#dbeafe;--orange:#ea580c;--orange-bg:#ffedd5;--red:#b91c1c;--red-bg:#fee2e2;--green:#15803d;--green-bg:#dcfce7}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+  .wrap{max-width:1040px;margin:0 auto;padding:40px 24px 80px}
+  .breadcrumb{font-size:13px;color:var(--ink-3);margin-bottom:18px}.breadcrumb a{color:var(--teal);text-decoration:none}
+  .modhead{background:linear-gradient(135deg,#0f766e,#1e3a5f);color:#fff;border-radius:16px;padding:28px 32px;margin-bottom:26px}
+  .modhead .pri{float:right;margin-top:4px}.modhead .num{font-size:13px;letter-spacing:2px;opacity:.85}.modhead h1{font-size:26px;margin:6px 0 8px}.modhead .tag{font-size:14px;opacity:.92}
+  h2{font-size:21px;margin:38px 0 14px;color:var(--blue);border-left:5px solid var(--teal);padding-left:12px}
+  h3{font-size:17px;margin:22px 0 10px}p{color:var(--ink-2)}
+  .badge{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px;box-shadow:0 1px 3px rgba(15,23,42,.04)}
+  .callout{border-left:4px solid var(--orange);background:var(--orange-bg);padding:13px 18px;border-radius:0 10px 10px 0;margin:16px 0;font-size:14.5px}
+  .callout.teal{border-color:var(--teal);background:var(--teal-bg)}.callout.red{border-color:var(--red);background:var(--red-bg)}
+  ul,ol{color:var(--ink-2)}li{margin-bottom:5px}
+  .goals{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.goal{background:var(--teal-bg);border-radius:10px;padding:14px 16px;font-size:14.5px}.goal b{color:var(--teal)}
+  .concepts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.concept{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}.concept .t{font-weight:600;color:var(--blue);font-size:15px;margin-bottom:4px}.concept .d{font-size:13.5px;color:var(--ink-3);line-height:1.55}
+  .scene{border:1px solid var(--line);border-left:4px solid var(--orange);padding:12px 16px;margin-bottom:10px;background:#fff;border-radius:0 8px 8px 0}.scene .st{font-weight:600;color:var(--orange);font-size:14.5px;margin-bottom:3px}.scene .sd{font-size:13.5px;color:var(--ink-2)}
+  .task{counter-reset:tn;padding-left:0}.task li{list-style:none;position:relative;padding-left:34px;margin-bottom:10px;font-size:14.5px}.task li::before{counter-increment:tn;content:counter(tn);position:absolute;left:0;top:0;width:24px;height:24px;background:var(--teal);color:#fff;border-radius:50%;text-align:center;line-height:24px;font-size:13px;font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:12px 0;background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(15,23,42,.04)}th,td{padding:10px 13px;text-align:left;font-size:13.5px;border-bottom:1px solid var(--line)}th{background:#f8fafc;color:var(--blue);font-weight:600;font-size:13px}tr:last-child td{border-bottom:none}
+  .src{font-size:13.5px}.src a{color:var(--teal);text-decoration:none;word-break:break-all}.src a:hover{text-decoration:underline}
+  nav.pager{display:flex;justify-content:space-between;margin-top:40px;gap:12px}nav.pager a{flex:1;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--ink);font-size:14px}nav.pager a:hover{border-color:var(--teal)}nav.pager .next{text-align:right;color:var(--teal);font-weight:600}
+  .foot{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-3)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="breadcrumb"><a href="README.md">索引</a> / <a href="00_导读与总览.html">总览</a> / <span>06 广告投放</span></div>
+
+  <div class="modhead">
+    <span class="pri"><span class="badge" style="background:rgba(255,255,255,.22);color:#fff">P1 重点</span></span>
+    <div class="num">MODULE 06</div>
+    <h1>广告投放</h1>
+    <div class="tag">站内广告是花钱的主战场。结构乱 = 烧钱不见单，结构清 = 越花越赚。</div>
+  </div>
+
+  <h2>学习目标</h2>
+  <div class="goals">
+    <div class="goal"><b>1.</b> 分清广告类型（SP/SB/SD）与自动/手动广告的定位</div>
+    <div class="goal"><b>2.</b> 掌握关键词匹配类型（广泛/词组/精确）与否定词机制</div>
+    <div class="goal"><b>3.</b> 理解 ACOS/TACOS 的含义与目标设定逻辑</div>
+    <div class="goal"><b>4.</b> 能按"结构→数据→调整动作"诊断一个广告账户的问题</div>
+  </div>
+
+  <h2>关键概念</h2>
+  <div class="concepts">
+    <div class="concept"><div class="t">广告类型</div><div class="d">SP（Sponsored Products，商品推广）、SB（Sponsored Brands，品牌推广）、SD（Sponsored Display，展示推广）。新品先 SP 起步，品牌备案后加 SB/SD 做防御外延。</div></div>
+    <div class="concept"><div class="t">自动 vs 手动</div><div class="d">自动广告让平台匹配词，用来挖词测词；手动广告自己选词打，用来精准控成本。常见套路：自动跑出转化词→拎到手动精准打。</div></div>
+    <div class="concept"><div class="t">匹配类型</div><div class="d">广泛匹配（含词序变体，覆盖广）、词组匹配（词序锁定，中等精准）、精确匹配（全匹配，最精准竞价最高）。匹配越宽，流量越杂需否定词配合。</div></div>
+    <div class="concept"><div class="t">否定关键词</div><div class="d">把不相关/只点击不转化的词否定掉，省预算提精准度。否定分精确否定/词组否定。这是广告省钱的第一利器。</div></div>
+    <div class="concept"><div class="t">ACOS / TACOS</div><div class="d">ACOS=广告花费÷广告销售额，看单条广告效率；TACOS=总广告花费÷总销售额，看广告对全店的整体拉动。要盯 TACOS 而非只盯 ACOS。</div></div>
+    <div class="concept"><div class="t">广告结构</div><div class="d">Campaign（活动）→ Ad Group（广告组）→ Keywords/Targets（关键词/定位）。结构按"词的意图"分组（自动挖词组/精准转化组/防御组），别一锅烩。</div></div>
+  </div>
+
+  <div class="callout red">
+    <strong>关通海的广告诊断铁律：</strong>先看结构再看数据。一个广告组里塞几十个无关词、自动手动不分、否定词没设——这种账户 ACOS 必然失控，调竞价没用，先重构结构。
+  </div>
+
+  <h2>业务流程图：广告漏斗与账户结构</h2>
+  <div class="card">
+    <svg viewBox="0 0 960 360" width="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs><marker id="f6" markerWidth="10" markerHeight="10" refX="8" refRef="3" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#0f766e"/></marker></defs>
+      <text x="20" y="22" font-size="13" fill="#0f766e" font-weight="700">A. 广告漏斗与关键指标</text>
+      <g font-size="12.5" font-weight="600" text-anchor="middle">
+        <rect x="40" y="38" width="880" height="44" rx="8" fill="#ccfbf1" stroke="#0f766e"/><text x="480" y="65" fill="#0f4a44">曝光 Impressions　指标：展现量 / 占比</text>
+        <rect x="100" y="92" width="760" height="44" rx="8" fill="#dbeafe" stroke="#1e3a5f"/><text x="480" y="119" fill="#172554">点击 Clicks　指标：CTR 点击率 = 点击/曝光</text>
+        <rect x="180" y="146" width="600" height="44" rx="8" fill="#ffedd5" stroke="#ea580c"/><text x="480" y="173" fill="#7c2d12">转化 Orders　指标：CVR 转化率 = 订单/点击，CPC 单次点击成本</text>
+        <rect x="280" y="200" width="400" height="44" rx="8" fill="#dcfce7" stroke="#15803d"/><text x="480" y="227" fill="#14532d">效率　指标：ACOS = 花费/广告销售额</text>
+      </g>
+      <line x1="480" y1="82" x2="480" y2="88" stroke="#0f766e" stroke-width="2" marker-end="url(#f6)"/>
+      <line x1="480" y1="136" x2="480" y2="142" stroke="#0f766e" stroke-width="2" marker-end="url(#f6)"/>
+      <line x1="480" y1="190" x2="480" y2="196" stroke="#0f766e" stroke-width="2" marker-end="url(#f6)"/>
+
+      <text x="20" y="282" font-size="13" fill="#1e3a5f" font-weight="700">B. 推荐账户结构（按词意图分组）</text>
+      <g font-size="12.5" font-weight="600" text-anchor="middle">
+        <rect x="20" y="298" width="300" height="48" rx="8" fill="#f8fafc" stroke="#334155"/><text x="170" y="327" fill="#172554">自动广告组（挖词）</text>
+        <rect x="340" y="298" width="300" height="48" rx="8" fill="#f8fafc" stroke="#334155"/><text x="490" y="327" fill="#172554">手动精准组（转化主力）</text>
+        <rect x="660" y="298" width="280" height="48" rx="8" fill="#f8fafc" stroke="#334155"/><text x="800" y="327" fill="#172554">防御/竞品定位组</text>
+      </g>
+    </svg>
+  </div>
+
+  <h3>广告诊断三步法</h3>
+  <table>
+    <tr><th>步骤</th><th>看什么</th><th>典型调整动作</th></tr>
+    <tr><td>1. 看结构</td><td>活动/广告组是否按词意图分组；自动手动是否分离；一组词数是否过多</td><td>重构广告组：挖词组、精准组、防御组分开，每组词性相近</td></tr>
+    <tr><td>2. 看数据</td><td>CTR、CVR、CPC、ACOS；高花费低转化词；只点击不转化词；高转化低成本词</td><td>砍高花费低转化词（否定或降竞价）；提预算给高转化词；扩词投同义长尾</td></tr>
+    <tr><td>3. 看趋势</td><td>TACOS 是否随广告投入上升而下降（说明自然流量被带动）；ACOS 周变化</td><td>TACOS 降=健康；TACOS 升=自然没起来，检查 Listing 转化与广告词相关性</td></tr>
+  </table>
+
+  <h2>常见业务场景</h2>
+  <div class="scene"><div class="st">自动广告烧钱无转化</div><div class="sd">预算被无关词烧光。运营动作：看搜索词报告，把只点击不转化的词否定掉，把转化的词拎到手动精准组放大。</div></div>
+  <div class="scene"><div class="st">关键词不分组，一锅烩</div><div class="sd">一个广告组塞几十个杂词，无法针对性调竞价。运营动作：按词意图拆组，每组的词性、竞价、预算可独立管理。</div></div>
+  <div class="scene"><div class="st">只打大词，ACOS 失控</div><div class="sd">大词流量大但贵且泛，点击不转化。运营动作：大词低价广泛占位，主力放长尾精准词，长尾 ACOS 通常更优。</div></div>
+  <div class="scene"><div class="st">没有否定词，预算漏斗</div><div class="sd">不相关搜索词持续消耗预算。运营动作：定期 review 搜索词报告，建立否定词库，持续清洗。</div></div>
+  <div class="scene"><div class="st">只盯 ACOS 不盯 TACOS</div><div class="sd">某条广告 ACOS 低就以为好，但全店 TACOS 在涨，说明自然流量没起来、全靠广告撑。运营动作：以 TACOS 为健康度主指标。</div></div>
+  <div class="scene"><div class="st">广告引流但 Listing 接不住</div><div class="sd">广告引来的流量，Listing 转化差（评分低/图差/卖点不清），烧广告等于烧钱。运营动作：先修 Listing 再放大广告。</div></div>
+
+  <h2>可落地的观察 / 练习任务</h2>
+  <ol class="task">
+    <li>在 Amazon Advertising 学习中心找广告入门课程，记录 SP/SB/SD 三类广告的展示位置与计费方式（CPC）。</li>
+    <li>为一个假设新品设计广告账户结构：至少 3 个广告组（自动挖词/手动精准/竞品防御），写明每组的词来源、匹配类型、竞价策略。</li>
+    <li>解释广泛/词组/精确三种匹配的差异，并各举一个适合的场景。说明否定精确与否定词组的区别。</li>
+    <li>给出一个 ACOS 计算示例：花费 $50、广告销售额 $200，ACOS 多少？再加一项 TACOS：全店广告花费 $100、全店销售额 $400，TACOS 多少？哪个更能反映全店健康度？</li>
+    <li>假设自动广告跑出一批搜索词，按"高转化/只点击不转化/完全不相关"三类分类，分别给出处理动作。</li>
+    <li>用本模块"三步诊断法"，描述一个 ACOS 失控账户的排查与调整思路。</li>
+  </ol>
+
+  <h2>官方参考资料</h2>
+  <ul class="src">
+    <li>Amazon Advertising 学习中心（最权威的广告教材）：<a href="https://advertising.amazon.com/" target="_blank">advertising.amazon.com</a> → Academy / 学习中心</li>
+    <li>Amazon 卖家后台·广告帮助：<a href="https://sellercentral.amazon.com/help" target="_blank">sellercentral.amazon.com/help</a> → 搜 "Sponsored Products" "ACOS" "Search Term Report"</li>
+    <li>Amazon 卖家大学·广告课程：<a href="https://sellercentral.amazon.com/learn" target="_blank">sellercentral.amazon.com/learn</a> → Advertising</li>
+    <li>Shopee·站内广告：<a href="https://seller.shopee.cn/edu/" target="_blank">seller.shopee.cn/edu</a> → 广告专题</li>
+    <li>TikTok Shop·联盟与广告：<a href="https://seller.tiktokglobalshop.com/" target="_blank">seller.tiktokglobalshop.com</a> → Seller Academy</li>
+  </ul>
+
+  <nav class="pager">
+    <a class="prev" href="05_定价与促销.html">← 上一页：定价与促销</a>
+    <a class="next" href="07_物流与售后.html">下一页：模块 07 物流与售后 →</a>
+  </nav>
+
+  <div class="foot">模块 06 · 广告投放 · 广告政策与计费以 Amazon Advertising 官方为准</div>
+
+</div>
+</body>
+</html>

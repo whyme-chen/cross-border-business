@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>03 选品与供应链 · 跨境电商销售运营实战指南</title>
+<style>
+  :root{--ink:#0f172a;--ink-2:#334155;--ink-3:#64748b;--line:#e2e8f0;--bg:#f1f5f9;--card:#fff;--teal:#0f766e;--teal-bg:#ccfbf1;--blue:#1e3a5f;--blue-bg:#dbeafe;--orange:#ea580c;--orange-bg:#ffedd5;--red:#b91c1c;--red-bg:#fee2e2;--green:#15803d;--green-bg:#dcfce7}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+  .wrap{max-width:1040px;margin:0 auto;padding:40px 24px 80px}
+  .breadcrumb{font-size:13px;color:var(--ink-3);margin-bottom:18px}.breadcrumb a{color:var(--teal);text-decoration:none}
+  .modhead{background:linear-gradient(135deg,#0f766e,#1e3a5f);color:#fff;border-radius:16px;padding:28px 32px;margin-bottom:26px}
+  .modhead .pri{float:right;margin-top:4px}
+  .modhead .num{font-size:13px;letter-spacing:2px;opacity:.85}.modhead h1{font-size:26px;margin:6px 0 8px}.modhead .tag{font-size:14px;opacity:.92}
+  h2{font-size:21px;margin:38px 0 14px;color:var(--blue);border-left:5px solid var(--teal);padding-left:12px}
+  h3{font-size:17px;margin:22px 0 10px}p{color:var(--ink-2)}
+  .badge{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px;box-shadow:0 1px 3px rgba(15,23,42,.04)}
+  .callout{border-left:4px solid var(--orange);background:var(--orange-bg);padding:13px 18px;border-radius:0 10px 10px 0;margin:16px 0;font-size:14.5px}
+  .callout.teal{border-color:var(--teal);background:var(--teal-bg)}.callout.red{border-color:var(--red);background:var(--red-bg)}
+  ul,ol{color:var(--ink-2)}li{margin-bottom:5px}
+  .goals{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.goal{background:var(--teal-bg);border-radius:10px;padding:14px 16px;font-size:14.5px}.goal b{color:var(--teal)}
+  .concepts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.concept{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}.concept .t{font-weight:600;color:var(--blue);font-size:15px;margin-bottom:4px}.concept .d{font-size:13.5px;color:var(--ink-3);line-height:1.55}
+  .scene{border:1px solid var(--line);border-left:4px solid var(--orange);padding:12px 16px;margin-bottom:10px;background:#fff;border-radius:0 8px 8px 0}.scene .st{font-weight:600;color:var(--orange);font-size:14.5px;margin-bottom:3px}.scene .sd{font-size:13.5px;color:var(--ink-2)}
+  .task{counter-reset:tn;padding-left:0}.task li{list-style:none;position:relative;padding-left:34px;margin-bottom:10px;font-size:14.5px}.task li::before{counter-increment:tn;content:counter(tn);position:absolute;left:0;top:0;width:24px;height:24px;background:var(--teal);color:#fff;border-radius:50%;text-align:center;line-height:24px;font-size:13px;font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:12px 0;background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(15,23,42,.04)}th,td{padding:10px 13px;text-align:left;font-size:13.5px;border-bottom:1px solid var(--line)}th{background:#f8fafc;color:var(--blue);font-weight:600;font-size:13px}tr:last-child td{border-bottom:none}
+  .src{font-size:13.5px}.src a{color:var(--teal);text-decoration:none;word-break:break-all}.src a:hover{text-decoration:underline}
+  nav.pager{display:flex;justify-content:space-between;margin-top:40px;gap:12px}nav.pager a{flex:1;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--ink);font-size:14px}nav.pager a:hover{border-color:var(--teal)}nav.pager .next{text-align:right;color:var(--teal);font-weight:600}
+  .foot{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-3)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="breadcrumb"><a href="README.md">索引</a> / <a href="00_导读与总览.html">总览</a> / <span>03 选品与供应链</span></div>
+
+  <div class="modhead">
+    <span class="pri"><span class="badge" style="background:rgba(255,255,255,.22);color:#fff">P0 必学</span></span>
+    <div class="num">MODULE 03</div>
+    <h1>选品与供应链</h1>
+    <div class="tag">选品决定七成生死，供应链决定成本与稳定。运营的第一性原理。</div>
+  </div>
+
+  <h2>学习目标</h2>
+  <div class="goals">
+    <div class="goal"><b>1.</b> 掌握选品四维评估法（需求/竞争/利润/风险），能对一个品类做出"做不做"判断</div>
+    <div class="goal"><b>2.</b> 理解三种供应链模式（备货推式/JIT拉式/一件代发）的适用场景与代价</div>
+    <div class="goal"><b>3.</b> 说出供应商评审的核心维度（交期/质量/价格/配合度/MOQ）</div>
+    <div class="goal"><b>4.</b> 能做一次单品全成本预核算，判断利润空间是否可做</div>
+  </div>
+
+  <h2>关键概念</h2>
+  <div class="concepts">
+    <div class="concept"><div class="t">选品四维评估</div><div class="d">需求侧（搜索量/趋势/痛点）、竞争侧（卖家数/头部垄断/差异化空间）、利润侧（成本测算）、风险侧（侵权/认证/物流限制）。四维都过的品才上。</div></div>
+    <div class="concept"><div class="t">市场调研工具</div><div class="d">平台搜索框联想词、Bestseller/New Release 榜、Helium10/Jungle Scout 等第三方工具（数据仅供参考）。官方 seller 后台的搜索词报告是一手数据。</div></div>
+    <div class="concept"><div class="t">供应链模式</div><div class="d">备货采购（推式，预测驱动，库存风险自担）、JIT/按需（拉式，低库存但要供应链快）、一件代发（dropshipping，零库存但品控时效弱）。三者是成本/风险/体验的三角权衡。</div></div>
+    <div class="concept"><div class="t">供应商评审维度</div><div class="d">交期、起订量 MOQ、质量合格率、价格、配合度、产能稳定性。新供应商先小批量试单验证，别一上来大单。</div></div>
+    <div class="concept"><div class="t">MOQ / 交期 / 打样</div><div class="d">最小起订量决定备货门槛；交期影响补货节奏；打样确认质量/logo/包装再下大货。这三项是采购谈判的核心。</div></div>
+    <div class="concept"><div class="t">全成本预核算</div><div class="d">采购价+头程+关税+平台佣金+FBA费用+退货损耗+广告预估+汇损，反推售价的毛利率。算完发现不赚钱的品，直接砍。</div></div>
+  </div>
+
+  <div class="callout teal">
+    <strong>选品第一铁律：</strong>需求真实存在 + 你能拿到差异化或成本优势 + 算得出利润 + 不侵权不违规。四条缺一条都别上。靠感觉选品是新手最大的坑。
+  </div>
+
+  <h2>业务流程图：选品漏斗 + 供应商评审</h2>
+  <div class="card">
+    <svg viewBox="0 0 960 360" width="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs><marker id="c3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#0f766e"/></marker>
+      <marker id="c3r" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#b91c1c"/></marker></defs>
+      <text x="20" y="22" font-size="13" fill="#0f766e" font-weight="700">A. 选品四维漏斗（从需求池层层过滤到下单品）</text>
+      <!-- 漏斗用梯形 -->
+      <g font-size="12.5" font-weight="600" text-anchor="middle">
+        <polygon points="40,40 920,40 840,90 120,90" fill="#ccfbf1" stroke="#0f766e"/>
+        <text x="480" y="71" fill="#0f4a44">需求池（热搜词/榜单/竞品）</text>
+        <polygon points="120,100 840,100 780,150 180,150" fill="#ccfbf1" stroke="#0f766e"/>
+        <text x="480" y="131" fill="#0f4a44">- 过滤侵权/认证风险品</text>
+        <polygon points="180,160 780,160 720,210 240,210" fill="#ffedd5" stroke="#ea580c"/>
+        <text x="480" y="191" fill="#7c2d12">- 过滤红海垄断品（头部占比过高）</text>
+        <polygon points="240,220 720,220 660,270 300,270" fill="#dbeafe" stroke="#1e3a5f"/>
+        <text x="480" y="251" fill="#172554">- 全成本利润测算达标</text>
+        <rect x="380" y="280" width="200" height="44" rx="8" fill="#dcfce7" stroke="#15803d"/>
+        <text x="480" y="308" fill="#14532d">差异化定位 → 下单</text>
+      </g>
+      <line x1="480" y1="270" x2="480" y2="278" stroke="#15803d" stroke-width="2" marker-end="url(#c3)"/>
+
+      <text x="20" y="345" font-size="12" fill="#475569">B. 供应商评审：寻源→打样→小批量试单→全面评估（交期/质量/价格/配合/MOQ）→合格供方→持续考核</text>
+    </svg>
+  </div>
+
+  <h2>常见业务场景</h2>
+  <div class="scene"><div class="st">凭感觉选品导致滞销</div><div class="sd">看什么火就跟什么，没做需求/竞争/利润验证，备货一堆卖不动，库存和仓储费压垮现金流。预防：四维评估过不了的不备货。</div></div>
+  <div class="scene"><div class="st">爆款断供</div><div class="sd">单供应商、没备安全库存，爆款来了供不上，排名掉、广告白烧。预防：核心品双供应商 + 安全库存 + 补货预警。</div></div>
+  <div class="scene"><div class="st">供应商质量不稳定</div><div class="sd">大货与打样不符、批次合格率波动，导致差评退货攀升。预防：来料质检、批次抽检、质量问题扣款条款写进合同。</div></div>
+  <div class="scene"><div class="st">成本测算遗漏项</div><div class="sd">只算采购价+运费，漏了关税、退货损耗、广告、汇损，看着赚钱实亏。预防：用全成本清单逐项核算，留足毛利缓冲。</div></div>
+  <div class="scene"><div class="st">一件代发的品控与时效坑</div><div class="sd">.dropshipping 零库存省事，但发货慢、品控不可控、售后扯皮，排名和评分上不去。适合测款，不适合长卖。</div></div>
+  <div class="scene"><div class="st">季节/趋势品踩错点</div><div class="sd">节日品、季节品备货窗口卡死，错峰即死库存。预防：按销售周期倒推采购+物流时效，提前备货。</div></div>
+
+  <h2>可落地的观察 / 练习任务</h2>
+  <ol class="task">
+    <li>选一个你感兴趣的品类，在 Amazon 搜索框输入核心词，记录联想词（长尾需求），并看 Bestseller 榜前 20 名的共性卖点与差评痛点。</li>
+    <li>用四维评估法给这个品类打分：需求（强/中/弱）、竞争（蓝海/红海）、利润（算一版全成本）、风险（侵权/认证/物流），给出"做不做"结论。</li>
+    <li>在 1688/阿里巴巴国际站找一个该品类的供应商，记录其 MOQ、报价、交期、是否支持打样/OEM，做一份供应商简评。</li>
+    <li>用 Excel 或纸笔做一次单品全成本核算：列出采购价、头程、关税、佣金、FBA费、退货率、广告占比、汇损，反推保本售价与目标售价。</li>
+    <li>对比"备货推式"vs"一件代发"两条路线在这个品类上的优劣，写 200 字判断该用哪条。</li>
+    <li>研究 Amazon Bestseller / New Release / Movers & Shakers 三个榜单的含义差异，说明各自对选品的指示作用。</li>
+  </ol>
+
+  <h2>官方参考资料</h2>
+  <ul class="src">
+    <li>Amazon 卖家大学·选品与采购：<a href="https://sellercentral.amazon.com/learn" target="_blank">sellercentral.amazon.com/learn</a> → Sourcing & Supply Chain 课程</li>
+    <li>Amazon 卖家后台·品类与选品：<a href="https://sellercentral.amazon.com/help" target="_blank">sellercentral.amazon.com/help</a> → 搜 "Product Research"</li>
+    <li>阿里巴巴国际站（寻源）：<a href="https://www.alibaba.com/" target="_blank">alibaba.com</a> · 1688：<a href="https://www.1688.com/" target="_blank">1688.com</a></li>
+    <li>Shopee 选品指南：<a href="https://seller.shopee.cn/edu/" target="_blank">seller.shopee.cn/edu</a> → 选品专题</li>
+    <li>选品第三方工具（数据仅供参考，非官方）：Helium10、Jungle Scout、卖家精灵、鸥鹭（各官网）</li>
+  </ul>
+
+  <nav class="pager">
+    <a class="prev" href="02_平台规则与合规.html">← 上一页：平台规则与合规</a>
+    <a class="next" href="04_商品上架与内容优化.html">下一页：模块 04 商品上架与内容优化 →</a>
+  </nav>
+
+  <div class="foot">模块 03 · 选品与供应链 · 第三方工具数据仅供参考，以平台官方后台为准</div>
+
+</div>
+</body>
+</html>

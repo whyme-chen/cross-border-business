@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>08 数据指标与支付结算 · 跨境电商销售运营实战指南</title>
+<style>
+  :root{--ink:#0f172a;--ink-2:#334155;--ink-3:#64748b;--line:#e2e8f0;--bg:#f1f5f9;--card:#fff;--teal:#0f766e;--teal-bg:#ccfbf1;--blue:#1e3a5f;--blue-bg:#dbeafe;--orange:#ea580c;--orange-bg:#ffedd5;--red:#b91c1c;--red-bg:#fee2e2;--green:#15803d;--green-bg:#dcfce7}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+  .wrap{max-width:1040px;margin:0 auto;padding:40px 24px 80px}
+  .breadcrumb{font-size:13px;color:var(--ink-3);margin-bottom:18px}.breadcrumb a{color:var(--teal);text-decoration:none}
+  .modhead{background:linear-gradient(135deg,#0f766e,#1e3a5f);color:#fff;border-radius:16px;padding:28px 32px;margin-bottom:26px}
+  .modhead .pri{float:right;margin-top:4px}.modhead .num{font-size:13px;letter-spacing:2px;opacity:.85}.modhead h1{font-size:26px;margin:6px 0 8px}.modhead .tag{font-size:14px;opacity:.92}
+  h2{font-size:21px;margin:38px 0 14px;color:var(--blue);border-left:5px solid var(--teal);padding-left:12px}
+  h3{font-size:17px;margin:22px 0 10px}p{color:var(--ink-2)}
+  .badge{display:inline-block;font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px;box-shadow:0 1px 3px rgba(15,23,42,.04)}
+  .callout{border-left:4px solid var(--orange);background:var(--orange-bg);padding:13px 18px;border-radius:0 10px 10px 0;margin:16px 0;font-size:14.5px}
+  .callout.teal{border-color:var(--teal);background:var(--teal-bg)}.callout.red{border-color:var(--red);background:var(--red-bg)}
+  ul,ol{color:var(--ink-2)}li{margin-bottom:5px}
+  .goals{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.goal{background:var(--teal-bg);border-radius:10px;padding:14px 16px;font-size:14.5px}.goal b{color:var(--teal)}
+  .concepts{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.concept{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}.concept .t{font-weight:600;color:var(--blue);font-size:15px;margin-bottom:4px}.concept .d{font-size:13.5px;color:var(--ink-3);line-height:1.55}
+  .scene{border:1px solid var(--line);border-left:4px solid var(--orange);padding:12px 16px;margin-bottom:10px;background:#fff;border-radius:0 8px 8px 0}.scene .st{font-weight:600;color:var(--orange);font-size:14.5px;margin-bottom:3px}.scene .sd{font-size:13.5px;color:var(--ink-2)}
+  .task{counter-reset:tn;padding-left:0}.task li{list-style:none;position:relative;padding-left:34px;margin-bottom:10px;font-size:14.5px}.task li::before{counter-increment:tn;content:counter(tn);position:absolute;left:0;top:0;width:24px;height:24px;background:var(--teal);color:#fff;border-radius:50%;text-align:center;line-height:24px;font-size:13px;font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:12px 0;background:var(--card);border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(15,23,42,.04)}th,td{padding:10px 13px;text-align:left;font-size:13.5px;border-bottom:1px solid var(--line)}th{background:#f8fafc;color:var(--blue);font-weight:600;font-size:13px}tr:last-child td{border-bottom:none}
+  .src{font-size:13.5px}.src a{color:var(--teal);text-decoration:none;word-break:break-all}.src a:hover{text-decoration:underline}
+  nav.pager{display:flex;justify-content:space-between;margin-top:40px;gap:12px}nav.pager a{flex:1;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--ink);font-size:14px}nav.pager a:hover{border-color:var(--teal)}nav.pager .next{text-align:right;color:var(--teal);font-weight:600}
+  .foot{margin-top:24px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-3)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="breadcrumb"><a href="README.md">索引</a> / <a href="00_导读与总览.html">总览</a> / <span>08 数据指标与支付结算</span></div>
+
+  <div class="modhead">
+    <span class="pri"><span class="badge" style="background:rgba(255,255,255,.22);color:#fff">P1 重点</span></span>
+    <div class="num">MODULE 08</div>
+    <h1>数据指标与支付结算</h1>
+    <div class="tag">看懂账才算真懂生意。只看销售额不看利润，是新手最大的幻觉。</div>
+  </div>
+
+  <h2>学习目标</h2>
+  <div class="goals">
+    <div class="goal"><b>1.</b> 掌握跨境电商核心指标体系，知道每项指标看哪一层、怎么解读</div>
+    <div class="goal"><b>2.</b> 理解平台结算周期与结算报告的结构</div>
+    <div class="goal"><b>3.</b> 能做单品利润核算与全店收入对账</div>
+    <div class="goal"><b>4.</b> 分清"销售额、毛利、净利"三个层级的差异</div>
+  </div>
+
+  <h2>关键概念</h2>
+  <div class="concepts">
+    <div class="concept"><div class="t">流量层指标</div><div class="d">曝光量、点击量、CTR（点击率）、CPC（单次点击成本）。看"被看到、被点击"的能力。</div></div>
+    <div class="concept"><div class="t">转化层指标</div><div class="d">CVR（转化率）、加购率、订单数、客单价。看"被点击后买不买"。</div></div>
+    <div class="concept"><div class="t">广告效率指标</div><div class="d">ACOS（广告花费/广告销售额）、TACOS（总广告花费/总销售额）。判断广告是否赚钱、是否带动自然流量。</div></div>
+    <div class="concept"><div class="t">运营健康指标</div><div class="d">BSR（畅销排名）、退货率、库存周转率、库龄、断货率。判断 Linking 与供应链健康度。</div></div>
+    <div class="concept"><div class="t">结算报告</div><div class="d">平台把订单收入扣除佣金、FBA费、广告费等后打款给卖家，附结算明细报告。要看懂每笔扣费对应什么。</div></div>
+    <div class="d">结算周期因平台而异（如每14天），结算币种与回款通道（第三方收款/P卡）影响汇率与到账。</div></div>
+    <div class="concept"><div class="t">利润核算</div><div class="d">单 SKU 净利 = 售价 − 采购 − 头程 − 关税 − 佣金 − FBA − 广告 − 退货损耗 − 汇损。常被漏算的是广告、退货、汇损。</div></div>
+  </div>
+
+  <div class="callout red">
+    <strong>最危险的认知错误：</strong>把"销售额"当"赚到的钱"。一个爆款的销售额背后，可能被广告、退货、仓储费吃得只剩薄利甚至亏损。运营每天第一眼该看利润，不是 GMV。
+  </div>
+
+  <h2>业务流程图：指标分层与结算到利润</h2>
+  <div class="card">
+    <svg viewBox="0 0 960 360" width="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs><marker id="h8" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#0f766e"/></marker></defs>
+      <text x="20" y="22" font-size="13" fill="#0f766e" font-weight="700">A. 指标分层（每层看不同问题）</text>
+      <g font-size="12.5" font-weight="600" text-anchor="middle">
+        <rect x="40" y="38" width="880" height="44" rx="8" fill="#ccfbf1" stroke="#0f766e"/><text x="480" y="65" fill="#0f4a44">流量层：曝光 / 点击 / CTR / CPC —— 够不够多人看到、点</text>
+        <rect x="40" y="92" width="880" height="44" rx="8" fill="#dbeafe" stroke="#1e3a5f"/><text x="480" y="119" fill="#172554">转化层：CVR / 加购率 / 订单 / 客单价 —— 看到后买不买</text>
+        <rect x="40" y="146" width="880" height="44" rx="8" fill="#ffedd5" stroke="#ea580c"/><text x="480" y="173" fill="#7c2d12">效率层：ACOS / TACOS —— 广告花得值不值</text>
+        <rect x="40" y="200" width="880" height="44" rx="8" fill="#dcfce7" stroke="#15803d"/><text x="480" y="227" fill="#14532d">健康层：BSR / 退货率 / 库存周转 / 断货率 —— 整体稳不稳</text>
+      </g>
+
+      <text x="20" y="282" font-size="13" fill="#1e3a5f" font-weight="700">B. 从结算报告到单品利润</text>
+      <g font-size="12" text-anchor="middle">
+        <rect x="20" y="298" width="160" height="50" rx="8" fill="#f8fafc" stroke="#334155"/><text x="100" y="328" fill="#0f172a">订单销售额</text>
+        <rect x="200" y="298" width="160" height="50" rx="8" fill="#fee2e2" stroke="#b91c1c"/><text x="280" y="320" fill="#7f1d1d">− 佣金/FBA/广告等</text><text x="280" y="338" fill="#7f1d1d" font-size="10.5">（看结算报告每笔扣费）</text>
+        <rect x="380" y="298" width="160" height="50" rx="8" fill="#f8fafc" stroke="#334155"/><text x="460" y="328" fill="#0f172a">= 平台结算打款</text>
+        <rect x="560" y="298" width="160" height="50" rx="8" fill="#fee2e2" stroke="#b91c1c"/><text x="640" y="320" fill="#7f1d1d">− 采购/头程/关税</text><text x="640" y="338" fill="#7f1d1d" font-size="10.5">− 退货/汇损</text>
+        <rect x="740" y="298" width="200" height="50" rx="8" fill="#dcfce7" stroke="#15803d"/><text x="840" y="328" fill="#14532d">= 单品真实净利</text>
+      </g>
+      <line x1="180" y1="323" x2="198" y2="323" stroke="#b91c1c" stroke-width="2" marker-end="url(#h8)"/>
+      <line x1="360" y1="323" x2="378" y2="323" stroke="#0f766e" stroke-width="2" marker-end="url(#h8)"/>
+      <line x1="540" y1="323" x2="558" y2="323" stroke="#b91c1c" stroke-width="2" marker-end="url(#h8)"/>
+      <line x1="720" y1="323" x2="738" y2="323" stroke="#0f766e" stroke-width="2" marker-end="url(#h8)"/>
+    </svg>
+  </div>
+
+  <h3>核心指标速查</h3>
+  <table>
+    <tr><th>指标</th><th>定义</th><th>看哪层</th><th>典型异常信号</th></tr>
+    <tr><td>CTR</td><td>点击/曝光</td><td>流量</td><td>低→主图/标题/价格问题</td></tr>
+    <tr><td>CVR</td><td>订单/点击</td><td>转化</td><td>低→卖点/评价/价格问题</td></tr>
+    <tr><td>ACOS</td><td>广告花费/广告销售额</td><td>效率</td><td>高→词不精准/Listing接不住</td></tr>
+    <tr><td>TACOS</td><td>总广告花费/总销售额</td><td>效率(全店)</td><td>升→自然流量没起来</td></tr>
+    <tr><td>退货率</td><td>退货订单/总订单</td><td>健康</td><td>高→品控/Listing误导</td></tr>
+    <tr><td>库存周转</td><td>销量/平均库存</td><td>健康</td><td>低→滞销压资金</td></tr>
+  </table>
+
+  <h2>常见业务场景</h2>
+  <div class="scene"><div class="st">只盯 GMV 不盯利润</div><div class="sd">销售额涨但利润没涨甚至降，钱都花广告和退货上了。运营动作：日报里利润权重 &gt; 销售额，每个爆款都跑利润核算。</div></div>
+  <div class="scene"><div class="st">结算金额对不上账</div><div class="sd">订单收入与平台打款对不上，差额来自佣金/FBA/退款等扣费。运营动作：用结算报告逐笔核对，建立对账机制。</div></div>
+  <div class="scene"><div class="st">利润漏算广告和退货</div><div class="sd">算利润只减采购和运费，忘了广告费和退货损耗，看着赚实亏。运营动作：用全成本清单逐项扣减。</div></div>
+  <div class="scene"><div class="st">指标看错层级归错因</div><div class="sd">转化率低却去改主图（主图影响点击不是转化）。运营动作：先定位问题在流量层还是转化层，再改对应要素。</div></div>
+  <div class="scene"><div class="st">汇损吃掉利润</div><div class="sd">结算币种与本位币汇率波动，回款时缩水。运营动作：关注汇率，必要时用收款工具锁汇，利润测算预留汇损缓冲。</div></div>
+  <div class="scene"><div class="st">库存周转差压资金</div><div class="sd">货卖不动占仓储费，资金链紧张。运营动作：盯周转率与库龄，滞销品清仓止损。</div></div>
+
+  <h2>可落地的观察 / 练习任务</h2>
+  <ol class="task">
+    <li>整理一张核心指标分层表，标注每个指标的定义、计算口径、归因方向（异常时该查什么）。</li>
+    <li>在 Amazon 卖家后台找到 Payments / 结算报告入口，看懂一份结算报告里收入项与扣费项的构成。</li>
+    <li>选一个单品，按本模块 B 的算式做一次完整利润核算，列出每一项成本与最终净利率。</li>
+    <li>区分销售额(GMV)、毛利、净利三个概念，各写一句话定义并举例说明三者差距怎么产生。</li>
+    <li>解释为什么 ACOS 低却不一定赚钱，TACOS 比 ACOS 更能反映全店健康度。</li>
+    <li>设计一份"运营日报"模板：含销售额、订单、CVR、ACOS、TACOS、退货率、利润估算、当日异常与动作。</li>
+  </ol>
+
+  <h2>官方参考资料</h2>
+  <ul class="src">
+    <li>Amazon·结算与支付：<a href="https://sellercentral.amazon.com/help" target="_blank">sellercentral.amazon.com/help</a> → 搜 "Payments" "Settlement Report"</li>
+    <li>Amazon 卖家大学·数据与报告：<a href="https://sellercentral.amazon.com/learn" target="_blank">sellercentral.amazon.com/learn</a> → Reports & Analytics</li>
+    <li>Amazon·业务报告（Business Reports）：<a href="https://sellercentral.amazon.com/help" target="_blank">sellercentral.amazon.com/help</a> → 搜 "Business Reports"</li>
+    <li>Shopee·收入与对账：<a href="https://seller.shopee.cn/edu/" target="_blank">seller.shopee.cn/edu</a> → 财务专题</li>
+    <li>TikTok Shop·结算与账单：<a href="https://seller.tiktokglobalshop.com/" target="_blank">seller.tiktokglobalshop.com</a> → Seller Academy</li>
+  </ul>
+
+  <nav class="pager">
+    <a class="prev" href="07_物流与售后.html">← 上一页：物流与售后</a>
+    <a class="next" href="09_学习路径与自测题.html">下一页：学习路径与自测题 →</a>
+  </nav>
+
+  <div class="foot">模块 08 · 数据指标与支付结算 · 结算周期与费率以平台后台为准</div>
+
+</div>
+</body>
+</html>
